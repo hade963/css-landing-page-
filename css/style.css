@@ -1,0 +1,232 @@
+/*+===================+ */
+/*Start Global rules */
+body { 
+    margin:0;
+    font-family: sans-serif;
+    padding: 0;
+}
+:root { 
+    --main-color: #1f2937;
+    --white-text-color: #f9faf8;
+    --section-background-color: #e5e7eb;
+    --secondary-color: #3882f6;
+    --section-padding: 80px;
+}
+ul { 
+    list-style: none;
+}
+.container { 
+ padding-left: 15px;
+ padding-right: 15px;
+ margin-left: auto;
+ margin-right: auto;   
+}
+
+@media(min-width: 768px)  { 
+    .container { 
+        width: 750px;  
+    }
+}
+@media(min-width: 997px)  { 
+    .container { 
+        width: 950px;  
+    }
+}
+@media(min-width:1200px)  { 
+    .container { 
+        width: 1170px;
+    }
+}
+
+
+a { 
+    text-decoration: none;
+    color: var(--main-color);
+}
+/* End Global rules */
+/*+===================+ */
+/* Start header */
+header { 
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+header .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .container h3 {
+color: var(--white-text-color,white);
+font-size: 24px;
+}
+header .container ul li  a { 
+    color: var(--section-background-color);
+    font-size: 18px;
+ }
+
+header ul { 
+    display: flex;
+    gap: 20px;
+}
+/* End header */
+/*+===================+ */
+/* start landing */
+.landing { 
+    padding-top: 200px;
+    height: calc(100vh - 200px);
+    background-color: var(--main-color);
+}
+.landing .container { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.landing .content h1 { 
+    color: var(--white-text-color);
+    font-size: 48px;
+    font-weight: 900;
+}
+.landing .content p { 
+    color: var(--section-background-color);
+    font-size: 18px;
+}
+.landing h1,
+.landing p { 
+    max-width: 400px;
+}
+.landing .content button { 
+    color: var(--section-background-color);
+    padding: 10px 20px;
+    background: #3882f6;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10px;
+    border: none;
+} 
+.landing .landing-image { 
+    flex-basis: 50%;
+}
+.landing .landing-image img { 
+    max-width: 100%;
+}
+/* End landing */
+/*+===================+ */
+/* Start section */
+.section { 
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.section .container { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;  
+}
+.section .container .content {
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+
+ }
+ .section .container .box  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .section .container .box p { 
+    width: 170px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    color: var(--main-color);
+ }
+ .section .container .box .image { 
+    overflow: hidden;
+    border-radius: 20px;
+ }
+ .section .container .box img { 
+    width: 200px;
+ }
+/* End section */
+/*+===================+ */
+/* Start Quote  */
+.quote { 
+    background-color: var(--section-background-color);
+    padding: 40px;
+}
+.quote .container { 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.quote blockquote { 
+    max-width: 900px;
+    font-size: 36px;
+    margin-bottom: 0;
+    color: var(--main-color,#1f2937);
+    font-style: italic;
+    font-weight: 100;
+}
+.quote .author { 
+    margin-right: 100px;
+    font-size: 20px;
+}
+/* End Quote  */
+/*+===================+ */
+/* Start contactus */
+.contactus { 
+    padding: var(--section-padding,60px);
+}
+.contactus .container {
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+.contactus .container .box { 
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    gap: 80px;
+    width: fit-content;
+    padding: 20px 100px;  
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.contactus .container .box h3 { 
+    color: white;
+}
+.contactus .container .box p { 
+    color: var(--white-text-color);
+}
+.contactus .container .box button { 
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+}
+/* End contactus */
+/*+===================+ */
+/* Start footer */
+footer { 
+    background-color: var(--main-color);
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+footer .container p { 
+    color: var(--white-text-color);
+    font-size: 18px;
+}   
+footer .container span { 
+    margin: 0 10px;
+}
+/* End footer */
+/*+===================+ */
