@@ -126,7 +126,7 @@ header ul {
 }
 .section .container .content {
     display: flex;
-    gap: 60px;
+    column-gap: 60px;
     flex-wrap: nowrap;
 
  }
@@ -144,7 +144,10 @@ header ul {
  }
  .section .container .box .image { 
     overflow: hidden;
+    margin-bottom: 0;   
     border-radius: 20px;
+    width: 200px;
+    height: 140px;
  }
  .section .container .box img { 
     width: 200px;
